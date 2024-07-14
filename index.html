@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MADHURAM</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><img src="search.png" alt="Search" height="35px" width="35px" ></a>
+            <a href="#"><img src="User.png" alt="User" height="35px" width="35px"></a>
+            <a href="#"><img src="cart.png" alt="Cart" height="35px" width="35px"></a>
+        </div>
+    </header>
+    
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to MADHURAM</h1>
+            <h1>Delicious Moments, Every Day!</h1>
+            <div class="hero-buttons">
+                <button onclick="window.location.href='#order'">Order now</button>
+                <button onclick="window.location.href='#reservation'">Reservation</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu">
+        <h2>Explore Dishes</h2>
+        <div class="dish-grid">
+            <div class="dish-tile">
+                <img src="indian thali.jpg" alt="Dish 1" height="150px" width="150px">
+                <div class="dish-info">
+                    <h3>Indian Thali</h3>
+                    <div>Experience the true essence of Indian cuisine with our exquisite Indian Thali. A symphony of flavors, colors, and textures, our Thali offers a culinary journey through India’s diverse gastronomic landscape. Each component is thoughtfully curated to provide a balanced and wholesome meal that tantalizes the taste buds.
+                        <p>            </p>
+                        Paneer Butter Masala, Dal Tadka,
+                        Mixed Vegetable Curry,
+                        Aloo Gobi,
+                        Rice or Pulao,
+                        Chapati or Naan,
+                        Raita,
+                        Pickle & Chutney,
+                        Papad,
+                        Dessert.</div>
+                </div>
+            </div>
+            <div class="dish-tile">
+                <img src="chinese platter.jpg" alt="Dish 2" height="150px" weight="150px">
+                <div class="dish-info">
+                    <h3>Chinese Platter</h3>
+                    <div>Indulge in our delectable Chinese Platter, a fusion of traditional Chinese flavors with a touch of Indian zest. Perfect for those who love a harmonious blend of taste and texture, our Chinese Platter is crafted to provide a satisfying and flavorful dining experience.
+                        <p>            </p>
+                        Veg Manchurian,Chilli Paneer,Veg Hakka Noodles,Fried Rice,Spring Rolls,Hot and Sour Soup,Dumplings.</div>
+                </div>
+                </div>
+            </div>
+            <div class="dish-tile">
+                <img src="indian chaat.jpg" alt="Dish 3">
+                <div class="dish-info">
+                    <h3>Indian Chaat</h3>
+                    <div>Explore the vibrant flavors of India with our irresistible Indian Chaat selection. Perfect for those who crave a burst of tangy, spicy, and sweet flavors in every bite, our chaat dishes are a celebration of India's street food culture.
+                        <p>            </p>
+                        Pani Puri,Bhel Puri,Sev Puri,Aloo Tikki Chaat,Papdi Chaat,Dahi Puri.</div>
+                </div>
+                </div>
+            </div>
+            <div class="dish-tile">
+                <img src="indian sweets.jpg" alt="Dish 3">
+                <div class="dish-info">
+                    <h3>Kuchh Meetha ho Jaaye!!!</h3>
+                    <div>Indulge in our exquisite selection of traditional Indian sweets, each crafted with care to bring you a taste of authentic flavors and textures.
+                        <p>            </p>
+                        Gulab Jamun,Rasgulla,Jalebi,Ladoo (Besan, Motichoor),Barfi (Kaju, Badam),Halwa (Sooji, Gajar),Rasmalai.</div>
+                </div>
+                </div>
+            </div>
+            <div class="dish-tile">
+                <img src="drinks.jpg" alt="Dish 3">
+                <div class="dish-info">
+                    <h3>Party-Sharty!!</h3>
+                    <div>Quench your thirst with our refreshing selection of Indian party drinks, perfect for any occasion. Whether you're toasting to celebrations or simply enjoying good company, these drinks are sure to elevate your party with their vibrant flavors and invigorating charm.
+                        <p>            </p>
+                        Lemon soda, Thandi Lassi, Badam shake, Mocktails,etc.</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p >Welcome to Madhuram Indian Restaurants, where tradition meets innovation and every meal is a celebration of authentic Indian flavors. Since our inception, we have been dedicated to bringing the rich and diverse culinary heritage of India to your table.</p>
+        <h3>Our Story</h3>
+        <p>Madhuram, meaning "sweet" in Sanskrit, symbolizes our commitment to offering a delightful dining experience that leaves a lasting impression. Our journey began with a passion for sharing the vibrant and intricate tastes of Indian cuisine with our community. Over the years, we have grown from a single establishment to a beloved chain of restaurants, each maintaining our core values of quality, authenticity, and exceptional service.</p>
+        <p>Thank you for choosing Madhuram. We look forward to serving you!</p>
+    </section>
+    
+    <section id="order">
+        <h2>Order Now</h2>
+        <button id="orderNowButton">Order Now</button>
+        <div id="orderForm" style="display: none;">
+            <label for="dish">Choose a dish:</label>
+            <select id="dish" multiple>
+                <option value="Indian thali ordered for value Rs 449">Indian Thali   ------>      Rs 449/-</option>
+                <option value="Chinee platter ordered for value Rs 359 ">Chinese Platter    ------>       Rs 359/-</option>
+                <option value="Indian Chaat ordered for value Rs 169">Indian Chaat   ------>         Rs 169/-</option>
+                <option value="Sweets ordered for value Rs 399">Sweets     ------>       Rs 399/-</option>
+                <option value="Drinks ordered for value Rs 149">Drinks   ------>         Rs 149/-</option>
+            </select>
+            <button id="submitOrder">Submit</button>
+        </div>
+    </section>
+    
+    
+    <section id="reservation">
+        <h2>Reservation</h2>
+        <button id="bookSeatButton">Book a Seat</button>
+        <script>
+            document.getElementById("bookSeatButton").addEventListener("click", function() {
+                alert("Your seat has been booked successfully! We will contact you soon to confirm the details.");
+            });
+        </script>
+    </section>
+    <section id="blog">
+        <h3>Blogs</h3>
+        <p>Share your experience with us.</p>
+        <form>
+          <textarea id="blog-text" placeholder="In the golden glow of morning's rise,
+          We greet the day with joyful eyes.
+          A spoonful of honey in morning tea,
+          Fresh fruit and granola, a delight to see.
+          
+          Midday sun high, casting shadows lean,
+          Lunch arrives, a culinary scene.
+          Quiches warm with flaky crust,
+          Salads bright, in greens we trust.
+          
+          As afternoon wanes, a treat we seek,
+          Cookies soft and pastries sleek.
+          A cup of joy, be it coffee or chai,
+          An afternoon lullaby, as time flies by.
+          
+          Evening whispers, twilight near,
+          Dinner’s song, a melody clear.
+          Pasta tossed with herbs divine,
+          Stews that simmer, rich in time.
+          
+          Night descends, a final bite,
+          Desserts that sparkle in moonlight.
+          Chocolate’s kiss and berries sweet,
+          A day complete, in flavors meet.
+          
+          Food, our muse from dawn till dusk,
+          In every meal, in every husk.
+          A dance of taste, a feast of heart,
+          From first light to starlit part.
+          
+          Food, your essence pure and true,
+          In every moment, we cherish you.
+          From sunrise glow to evening's hue,
+          Our love for you, forever anew."></textarea>
+          <button id="submit-blog">Submit</button>
+        </form>
+        <div id="popup" style="display: none;">
+            <p>Thank you for sharing your valuable experience. Have a nice day!</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: infomadhuram@gmail.com</p>
+        <p>Phone: +91-7693938967</p>
+        <p>Address: Narsipuram, Mathura</p>
+        <p>India</p>
+    </section>
+    
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Madhuram. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
